@@ -1,0 +1,318 @@
+/* ==========================
+    ====== general style=====
+    ========================= */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+}
+a {
+  text-decoration: none;
+}
+:root {
+  font-size: 18px;
+  width: 99vw;
+}
+span,
+img {
+  display: block;
+}
+i {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin: 5px;
+}
+
+/* centered items */
+header > div:first-of-type span,
+header a,
+i.fab,
+footer > span a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* ==========================
+    ========= header ========
+    ========================= */
+header {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 80px;
+  background: hsl(193, 100%, 96%) url("Images/bg-hero-desktop.svg");
+  row-gap: 50px;
+}
+header > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header > div:first-of-type {
+  width: 100%;
+}
+header > div:first-of-type img {
+  width: 150px;
+  object-fit: contain;
+}
+header > div:first-of-type span {
+  width: 200px;
+  height: 36px;
+  background-color: white;
+  border-radius: 18px;
+  box-shadow: 0 1px 5px 0px hsl(208, 11%, 55%);
+}
+header div:nth-of-type(2) div {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+header div:nth-of-type(2) img {
+  width: 600px;
+}
+header div div a {
+  width: 300px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: hsl(322, 100%, 66%);
+  color: white;
+  font-weight: 700;
+}
+
+/* ==========================
+    ========== main =========
+    ========================= */
+main {
+  width: 98vw;
+  padding-top: 80px;
+}
+main > div {
+  width: 80%;
+  height: 350px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  box-shadow: 0 0 3px 0 hsl(208, 11%, 55%);
+  margin: 30px auto;
+  align-items: center;
+  justify-content: space-evenly;
+}
+main > div img {
+  width: 300px;
+  object-fit: contain;
+}
+main > div div {
+  width: 470px;
+}
+main p {
+  opacity: 0.7;
+}
+/* ==========================
+    ========= Footer ========
+    ========================= */
+footer {
+  width: 98vw;
+  padding: 0 70px 50px 70px;
+  margin-top: 150px;
+  background-color: hsl(192, 100%, 9%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+footer > img {
+  width: 150px;
+  object-fit: contain;
+}
+footer > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  row-gap: 40px;
+}
+footer > div > div {
+  display: flex;
+  flex-direction: column;
+  opacity: 0.7;
+  font-weight: 400;
+}
+footer > div > div:first-of-type {
+  width: 360px;
+}
+body footer > div > div:nth-of-type(4) {
+  flex-direction: row;
+}
+footer > div > div p,
+footer > div > div img {
+  display: inline-block;
+}
+footer > div > div:first-of-type div {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10px;
+}
+footer > p:first-of-type {
+  font-size: 13px;
+  align-self: flex-end;
+}
+footer > span {
+  width: 500px;
+  height: 200px;
+  align-self: center;
+  position: relative;
+  bottom: 110px;
+  box-shadow: 0 0 3px 0 hsl(208, 11%, 55%);
+  background-color: white;
+  text-align: center;
+  border-radius: 10px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+footer span a {
+  width: 300px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: hsl(322, 100%, 66%);
+  color: white;
+  font-weight: 700;
+  box-sizing: content-box;
+}
+/* ==========================
+    ====== large screen =====
+    ========================= */
+@media (max-width: 700px) {
+  header div:nth-of-type(2) img {
+    width: 400px;
+  }
+  header {
+    padding: 20px;
+  }
+  header div:nth-of-type(2) div {
+    width: 380px;
+  }
+  header > div:first-of-type span {
+    width: 180px;
+  }
+  header a {
+    width: 300px;
+  }
+  main,
+  footer {
+    min-width: 650px;
+  }
+  main > div {
+    width: 90%;
+    height: 300px;
+  }
+  footer > div > div {
+    width: 280px;
+  }
+  footer > span {
+    width: 450px;
+    height: 180px;
+  }
+}
+/* ==========================
+    ====== mobile screen=====
+    ========================= */
+@media (max-width: 375px) {
+  :root {
+    min-width: 350px;
+    font-size: 0.8em;
+  }
+  header > div:first-of-type img {
+    width: 100px;
+  }
+  header > div:first-of-type span {
+    width: 100px;
+    height: 30px;
+    background-color: white;
+    border-radius: 15px;
+  }
+  header div:nth-of-type(2),
+  footer > div {
+    flex-direction: column;
+  }
+  header {
+    gap: 80px;
+    padding: 20px;
+    align-items: center;
+  }
+  header div:nth-of-type(2) img {
+    width: 300px;
+  }
+  header div:nth-of-type(2) div,
+  header div:nth-of-type(2) {
+    gap: 20px;
+  }
+  header div:nth-of-type(2) div {
+    width: 300px;
+    text-align: center;
+    align-items: center;
+  }
+  header a {
+    width: 90%;
+  }
+  main {
+    min-width: 350px;
+    padding-top: 40px;
+  }
+  main > div img {
+    width: 250px;
+  }
+  main > div {
+    flex-direction: column;
+    width: 80%;
+    height: 500px;
+  }
+  main > div:nth-of-type(1),
+  main > div:nth-of-type(3) {
+    flex-direction: column-reverse;
+  }
+  main > div div {
+    width: 250px;
+  }
+  footer {
+    padding: 0 20px 30px 20px;
+  }
+  footer > div > div:first-of-type {
+    width: 280px;
+  }
+  footer > div > div {
+    gap: 20px;
+  }
+  footer {
+    min-width: 350px;
+  }
+  footer > span {
+    width: 280px;
+    height: 150px;
+  }
+  footer > div > div:nth-of-type(4) {
+    align-self: center;
+    width: fit-content;
+  }
+  footer > p:first-of-type {
+    align-self: center;
+  }
+  footer span a {
+    width: 80%;
+  }
+}
