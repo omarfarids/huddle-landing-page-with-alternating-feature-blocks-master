@@ -239,6 +239,7 @@ footer span a {
   }
   header > div:first-of-type img {
     width: 100px;
+    background-image: url("images/bg-hero-mobile.svg");
   }
   header > div:first-of-type span {
     width: 100px;
