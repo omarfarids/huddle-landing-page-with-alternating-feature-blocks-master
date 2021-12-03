@@ -46,6 +46,20 @@ footer > span a {
   align-items: center;
 }
 /* ==========================
+    ========= onHover ========
+    ========================= */
+header div div a:hover,
+header > div:first-of-type span:hover,
+footer span a:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+footer i:hover {
+  color: hsl(322, 100%, 66%);
+  cursor: pointer;
+}
+
+/* ==========================
     ========= header ========
     ========================= */
 header {
